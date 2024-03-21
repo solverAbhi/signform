@@ -6,7 +6,7 @@ const { User } = require("./db");
 const cors = require("cors");
 const JWT_SECRET = "abhishek";
 app.use(cors({
-  origin: [],
+  origin: ["https://signform.vercel.app"],
   methods:["POST","GET"],
   credentials:true
 }));
