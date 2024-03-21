@@ -92,6 +92,4 @@ app.get("/", (req, res) => {
   res.json({ success: true });
 });
 
-app.listen("3000", (res, req) => {
-  console.log("conneted to 3000");
-});
+app.listen();
