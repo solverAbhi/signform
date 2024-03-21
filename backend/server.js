@@ -5,7 +5,11 @@ const { v4: uuidv4 } = require("uuid");
 const { User } = require("./db");
 const cors = require("cors");
 const JWT_SECRET = "abhishek";
-app.use(cors());
+app.use(cors({
+  origin: [],
+  methods:["POST","GET"],
+  credentials:true
+}));
 app.use(express.json());
 const mySchema = zod.object({
   email: zod.string(),
