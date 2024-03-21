@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import { cn } from "../utils/cn";
+import { Label } from "./ui/label.js";
+import { Input } from "./ui/input.js";
+import { cn } from "../utils/cn.js";
 import {
   IconBrandGithub,
   IconBrandGoogle,
