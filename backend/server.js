@@ -5,11 +5,7 @@ const { v4: uuidv4 } = require("uuid");
 const { User } = require("./db");
 const cors = require("cors");
 const JWT_SECRET = "abhishek";
-app.use(cors({
-  origin: ["https://signform.vercel.app"],
-  methods:["POST","GET"],
-  credentials:true
-}));
+app.use(cors());
 app.use(express.json());
 const mySchema = zod.object({
   email: zod.string(),
@@ -92,4 +88,4 @@ app.get("/", (req, res) => {
   res.json({ success: true });
 });
 
-app.listen();
+app.listen(3000);
